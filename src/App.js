@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { publicRoutes } from './routes/routes';
+import DefaultLayouts from './layouts/DefaultLayouts/DefaultLayouts';
+import Globals from './components/Globals/Globals';
+import { DataProvider } from './api/dataContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Globals>
+      <DataProvider>
+        <Router>
+          <div className="App">
+            <Routes>
+              {
+                publicRoutes.map((route,index)=>{
+                  const Page = route.component;
+                  const Layout = DefaultLayouts;
+                  return (
+                    <Route
+                      key={index}
+                      path={route.path}
+                      element = {
+                        <Layout>
+                          <Page />
+                        </Layout>
+                      }
+                    />
+                  )
+                })
+              }
+            </Routes>
+          </div>
+        </Router>
+      </DataProvider>
+    </Globals>
   );
 }
 

@@ -1,0 +1,173 @@
+{
+  "customers": [
+    {
+      "id": 2,
+      "name": "Nguyễn Ngọc Hậu",
+      "phone": "0387356984",
+      "date": "09/07/1990",
+      "township": "Cổ Nhuế, Bắc Từ Liêm",
+      "city": "Hà Nội",
+      "email": "ngochauvodoi@gmail.com"
+    },
+    {
+      "name": "Vũ Ngọc Long",
+      "phone": "031566223",
+      "date": "09/02/2000",
+      "township": "Thanh Xuân Co nhue 22",
+      "city": "Hà Nội",
+      "email": "ngocLonag20333@gmail.com",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Võ Văn Đô",
+      "phone": "0387365221",
+      "date": "08/12/2000",
+      "township": "Đồ Sơn",
+      "city": "Hà Nội",
+      "email": "vuvandobn1222@gmail.com"
+    },
+    {
+      "name": "Ngô Đức Đạt",
+      "phone": "0387365221",
+      "date": "08/12/2000",
+      "township": "Đồ Sơn 4",
+      "city": "Hà Nội",
+      "email": "vuvandobn1222@gmail.com",
+      "id": 5
+    },
+    {
+      "id": 7,
+      "name": "Lương Thế Vinh",
+      "phone": "0387365221",
+      "date": "08/12/2000",
+      "township": "Đồ Sơn",
+      "city": "Hà Nội",
+      "email": "vuvandobn1222@gmail.com"
+    },
+    {
+      "name": "Nguyễn Xuân Thường",
+      "phone": "0915322224",
+      "date": "09/09/1998",
+      "township": "Hà Đô",
+      "city": "Thái Bình",
+      "email": "thuongxuan@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "Nguyễn Hoàng Quân",
+      "phone": "0915327755",
+      "township": "Thành phố Bắc Ninh",
+      "city": "Thành phố Bắc Ninh",
+      "email": "quanbeovodoi@gmail.com",
+      "date": "13/07/2023",
+      "id": 13
+    },
+    {
+      "name": "Nguyễn Hoàng Quân",
+      "phone": "0915327755",
+      "township": "Thành phố Bắc Ninh",
+      "city": "Thành phố Bắc Ninh",
+      "email": "quanbeovodoi@gmail.com",
+      "id": 14
+    },
+    {
+      "name": "Nguyễn Hoàng Quân",
+      "phone": "0915327755",
+      "date": "14/07/2023",
+      "township": "Thành phố Nam Dinh",
+      "city": "Thành phố Nam Dinh",
+      "email": "quanbeovodoi@gmail.com",
+      "id": 15
+    },
+    {
+      "phone": "0915327755",
+      "name": "Nguyễn Hoàng Quân",
+      "township": "Thành phố Bắc Ninh",
+      "city": "Thành phố Bắc Ninh",
+      "email": "quanbeovodoi@gmail.com",
+      "date": "04/07/2023",
+      "id": 16
+    },
+    {
+      "name": "Nguyễn Hoàng Quân",
+      "phone": "0915327755",
+      "email": "quanbeovodoi@gmail.com",
+      "date": "06/07/2023",
+      "city": "Tỉnh Cao Bằng",
+      "township": "Tỉnh Tuyên Quang",
+      "id": 17
+    },
+    {
+      "name": "Nguyễn Hoàng Quân",
+      "phone": "0915327755",
+      "email": "quanbeovodoi@gmail.com",
+      "township": "Huyện Pác Nặm",
+      "date": "04/07/2023",
+      "id": 18
+    },
+    {
+      "date": "12/07/2023",
+      "city": "Thành phố Hà Nội",
+      "township": "Quận Hà Đông",
+      "name": "Ngô Tú",
+      "phone": "0915327755",
+      "email": "quanbeovodoi@gmail.com",
+      "id": 19
+    },
+    {
+      "date": "06/07/2023",
+      "name": "Nguyễn Hoàng Quân",
+      "email": "quanbeovodoi@gmail.com",
+      "city": "Tỉnh Cao Bằng",
+      "township": "Huyện Bảo Lâm",
+      "phone": "091 532 7558",
+      "id": 20
+    },
+    {
+      "date": "27/07/2023",
+      "name": "Nguyễn Hoàng Quân",
+      "email": "quanbeovodoi@gmail.com",
+      "phone": "0915327755",
+      "city": "Tỉnh Hà Giang",
+      "township": "Thành phố Hà Giang",
+      "id": 21
+    },
+    {
+      "date": "18/07/2023",
+      "name": "Nguyễn Hoàng Quân",
+      "phone": "0915327755",
+      "email": "quanbeovodoi@gmail.com",
+      "city": "Thành phố Hà Nội",
+      "township": "Quận Hoàn Kiếm",
+      "id": 22
+    },
+    {
+      "date": "17/07/2023",
+      "email": "quanbeovodoi@gmail.com",
+      "name": "Nguyễn Hoàng Quân",
+      "phone": "0915327755",
+      "city": "Thành phố Hà Nội",
+      "township": "Quận Ba Đình",
+      "id": 23
+    },
+    {
+      "date": "28/07/2023",
+      "phone": "091 532 7755",
+      "name": "Nguyễn Hoàng Quân",
+      "email": "quanbeovodoi@gmail.com",
+      "city": "Thành phố Hà Nội",
+      "township": "Quận Ba Đình",
+      "id": 24
+    },
+    {
+      "date": "28/07/2023",
+      "phone": "0915327755",
+      "name": "Nguyễn Ngọc Long",
+      "email": "quanbeovodoi@gmail.com",
+      "city": "Thành phố Hà Nội",
+      "township": "Huyện Thanh Trì",
+      "id": 25
+    }
+  ]
+}

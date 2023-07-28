@@ -1,0 +1,65 @@
+.form{
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 30px;
+    .grid-col-2{
+        grid-column: 1 / span 2;
+    }
+    .title{
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    >div{
+        position: relative;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        label{
+            position: absolute;
+            font-size: 10px;
+            background-color: #fff;
+            display: inline-block;
+            top: -5px;
+            padding: 0px 4px;
+            z-index: 10;
+            width: fit-content;
+            left: 30px;
+        }
+    }
+    input[type='text'],input[type='email']{
+        padding: 5px;
+        outline: none;
+        border: 1px solid #dadada;
+        width: 100%;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .date-input{
+        width: 100%;
+        margin: 5px;
+    }
+    .buttons{
+        margin-top: 20px;
+        button{
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #2196f3;
+            color: #fff;
+            font-size: 14px;
+            &:hover{
+                background-color: #1477c8; 
+            }
+        }
+    }
+}
+
+
+.date-input{
+    width: 100%;
+    input{
+        padding: 15px !important;
+    }
+}

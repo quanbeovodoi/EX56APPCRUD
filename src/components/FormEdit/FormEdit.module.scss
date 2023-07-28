@@ -1,0 +1,47 @@
+form{
+    font-size: 1rem;
+    .title{
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    >div{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        label{
+            display: inline-block;
+            width: 20%;
+        }
+    }
+    input[type='text'],input[type='email']{
+        padding: 5px;
+        outline: none;
+        border: 1px solid #dadada;
+        margin-left: 15px ;
+        width: 75%;
+        border-radius: 5px;
+    }
+    .date-input{
+        margin-left: 15px ;
+        width: 75%;
+    }
+    .buttons{
+        margin-top: 20px;
+        button{
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #2196f3;
+            color: #fff;
+            font-size: 14px;
+            &:hover{
+                background-color: #1477c8; 
+            }
+        }
+    }
+}
+.grid-col-2{
+    grid-column: 1 / span 2;
+}
