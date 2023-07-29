@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import config from "../config/config";
 
 export const dataContext = createContext(null);
 const getData = (setCustomer)=>{
@@ -10,7 +11,12 @@ const getData = (setCustomer)=>{
 export const DataProvider = (props) => {
     const [customersData,setCustomersData] = useState([]);
     const [province,setProvince] = useState([])
-    const [provinceDepth2,setProvinceDepth2] = useState([])
+    const [provinceDepth2,setProvinceDepth2] = useState([]);
+    const [languagesData,setLanguagesData] = useState(config.languages['VN']);
+    const [languages,setLanguages] = useState('VN')
+    useEffect(()=>{
+        setLanguagesData(config.languages[languages])
+    },[languages])
     useEffect(()=>{
         getData(setCustomersData);
         getProvinces();
@@ -37,16 +43,16 @@ export const DataProvider = (props) => {
         // console.log('api:', value)
         let url = 'http://localhost:3000/customers?';
         if(value.name){
-            url = url+`&name=${value.name}`
+            url = url+`&name_like=${value.name}`
         }
         if(value.phone){
-            url = url+ `&phone=${value.phone}`
+            url = url+ `&phone_like=${value.phone}`
         }if(value.township)
         {
-            url = url+ `&township=${value.township}`
+            url = url+ `&township_like=${value.township}`
         }
         if(value.date){
-            url = url+ `&date=${value.date}`
+            url = url+ `&date_like=${value.date}`
         }
         if(value){
             fetch(url)
@@ -69,6 +75,10 @@ export const DataProvider = (props) => {
         .catch((error) => console.log(error));
     }
     const contextValue = {
+        languages,
+        setLanguages,
+        languagesData,
+        setLanguagesData,
         customersData,
         province,
         provinceDepth2,
