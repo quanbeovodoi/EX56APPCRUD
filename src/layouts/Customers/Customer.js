@@ -12,12 +12,13 @@ const cx = classNames.bind(styles);
 function Customer() {
   const [showForm, setShowForm] = useState(false);
   const [showFormEdit, setShowFormEdit] = useState(false);
-  const { customersData, addToCustomer, reRenderData, DeleteToCutomer,filterCustomer} =
+  const { customersData, addToCustomer, reRenderData, DeleteToCutomer,filterCustomer,languagesData} =
     useContext(dataContext);
   const [idEdit, setIdEdit] = useState(null);
   const [isFilter,setIsFilter] = useState(false);
   const [itemPerPage, setItemPerPage] = useState(5);
   const [currentPage, setCurrentPage] = useState(0);
+    const customerContent = languagesData.body;
   const sliceData = (start, end) => {
     // console.log("start:", start, "End:", end);
     const dataReversed = customersData.slice(0).reverse();
@@ -71,7 +72,7 @@ function Customer() {
       <div className="content_page">
         <div className="box_list">
           <div className="title font-bold">
-            <h2>Danh sách khách hàng</h2>
+            <h2>{customerContent.title}</h2>
           </div>
           <div className="ext">
             <div className="search_bar">
@@ -79,7 +80,7 @@ function Customer() {
                 type="text"
                 name="search"
                 id="searchBar"
-                placeholder="search...."
+                placeholder= {customerContent.search + "...."}
               />
               <div className="icon-search">
                 <svg
@@ -99,7 +100,7 @@ function Customer() {
                 id="add_customer"
                 onClick={() => openForm()}
               >
-                Thêm mới
+                {customerContent.btn}
               </button>
               <button
                 className="btn transparent text-base font-semibold"
@@ -109,7 +110,7 @@ function Customer() {
                   reRenderData()
                 }}
               >
-                {isFilter?'Ẩn bộ lọc': 'Bộ lọc'}
+                {isFilter?customerContent.hiddenFilter: customerContent.filter}
               </button>
             </div>
           </div>
